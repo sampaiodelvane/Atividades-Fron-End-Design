@@ -1,8 +1,11 @@
 body {background-color: #3B2458;
-color: aliceblue;
+color: #f7f7fb;
 text-align: center;
 font-family: Georgia, 'Times New Roman', Times, serif;
 font-size: large;}
 
 header{display: flex;
 justify-content: end;}
+
+section{color: #f7f7fb;
+background-color: #0b0a12}
