@@ -4,8 +4,9 @@ text-align: center;
 font-family: Georgia, 'Times New Roman', Times, serif;
 font-size: large;}
 
-header{display: flex;
-justify-content: end;}
+ul{display: flex;
+justify-content: end;
+text-align: right;}
 
 section{color: #f7f7fb;
 background-color: #0b0a12}
