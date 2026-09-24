@@ -1,34 +1,134 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NovaCore - Landing Page</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Demo Bootstrap</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
+
 <body>
-    <header>
-        <ul>
-            <li>Soluções</li>
-            <li>Sobre nós</li>
-            <li>Clientes</li>
-            <li>Contato</li>
-        </ul>
 
-    </header>
-    <hero>
-            <h1>Tecnologia para acelerar ideias, equipes e negócios</h1>
-            <p>Soluções digitais sob medida para empresas que querem inovar com estratégia, clareza e eficiência.</p>
-            <button>QUERO CONHECER</button>
-    </hero>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
 
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">DevSignOn</a>
 
-        <section>
-            <p>NOSSO TRABALHO</p>
-            <h2>Serviços</h2>
-            <p>A NovaCore combina estratégia, design e desenvolvimento para criar soluções digitais que simplificam processos e fazem negócios evoluirem.</p>
-        </section>
-    
-    
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarScroll">
+
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">
+                            Início
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Produtos</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Serviços
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    Visita Técnica
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    Soluções para Empresas
+                                </a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    Soluções para Pessoas Físicas
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">
+                            Link
+                        </a>
+                    </li>
+
+                </ul>
+
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
+
+                    <button class="btn btn-outline-success" type="submit">
+                        Buscar
+                    </button>
+                </form>
+
+            </div>
+        </div>
+
+    </nav>
+
+    <!-- Título -->
+    <div class="container my-5 text-center">
+
+        <h1 class="display-5 fw-bold">
+            Bootstrap na prática
+        </h1>
+
+        <!-- display-5 => estilização de título + tamanho 5 -->
+
+        <p class="lead">
+            Componentes prontos + classes utilitárias
+        </p>
+
+        <!-- lead => estilização de texto -->
+
+    </div>
+
+    <section class="mb-5">
+        <div class="container">
+            <!-- row => representa uma linha usando Flexbox -->
+            <div class="row">
+                <!-- col-md-4 => ocupa 4/12, ou seja, 1/3 da linha -->
+                <div class="col-md-4">
+                    <div class="bg-primary text-white rounded text-center p-3">
+                        Coluna MD-4
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="bg-primary text-white rounded text-center p-3">
+                        Coluna MD-4
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="bg-primary text-white rounded text-center p-3">
+                        Coluna MD-4
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
+        </script>
+
 </body>
+
 </html>
